@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* --- lo básico por aqui --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  background-color: #E8EBE4;
+}
+
+/* --- contenedor principal  --- */
+.contenedor-principal {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background-color: #fff;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* --- columna de contactos --- */
+.seccion-contactos {
+  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #BEC1BB;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+/* --- estado --- */
+.estado-usuario {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  border-bottom: 1px solid #BEC1BB;
+}
+
+.usuario-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.usuario-nombre {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #1B1F21;
+}
+
+.usuario-estado {
+  font-size: 10px;
+  color: #828485;
+}
+
+.usuario-iconos {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  font-size: 20px;
+  color: #444749;
+  cursor: pointer;
+}
+
+/* --- Chat --- */
+.contenedor-boton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 18px;
+  border-bottom: 1px solid #BEC1BB;
+}
+
+.btn-nuevo-chat {
+  background-color: #A491D2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-nuevo-chat:hover {
+  background-color: #7c5cbf;
+}
+
+/* --- Lista de contactos --- */
+.lista-contactos {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+/* --- Cada uno de los contactos --- */
+.contacto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border-bottom: 1px solid #E8EBE4;
+  cursor: pointer;
+}
+
+.contacto:hover {
+  background-color: #f5f0ff;
+}
+
+.contacto-nombre {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1B1F21;
+}
+
+.contacto-mensaje {
+  font-size: 12px;
+  color: #828485;
+  margin-top: 2px;
+}
+
+/* ---avatar--- */
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* --- y la derecha--- */
+.seccion-principal {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+
+/* --- central --- */
+.contenido-central {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  max-width: 500px;
+  padding: 20px;
+}
+
+
+.contenido-central h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  color: #1B1F21;
+  line-height: 1.2;
+}
+
+.contenido-central p {
+  font-size: 16px;
+  color: #828485;
+  line-height: 1.6;
+  max-width: 420px;
+}
+
+/* --- Imagen central --- */
+.logo-networking img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.logo-networking {
+  background-color: #A491D2;
+  border-radius: 20px;
+  width: 270px;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.logo-networking svg {
+  width: 140px;
+  height: 140px;
+}
